@@ -91,13 +91,6 @@ export function sumArrayWithThreeNumbers(sumArr) {
     return [sum2, `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum2} is their sum.`];
 }
 
-// export function sumArrayWithThreeNumbers(sumArr) {
-//     const sumA = sum(sumArr[0], sumArr[1]);
-//     const sumB = sum(sumA[0], sumArr[2])[0];
-     
-//     return [sumB, `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumB} is their sum.`];
-
-// }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
@@ -109,7 +102,7 @@ as its argument and returns an array whose first element is the product of those
 and the second element is a string that EXACTLY follows this example and uses the values 
 that were input into the function:
 
-// "The numbers 2,3,4 have a product of 24."
+"The numbers 2,3,4 have a product of 24."
 
 /*IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. 
 To do multiplication, use your multiply() function that you've already created. 
@@ -118,9 +111,12 @@ This function should handle an array containing three elements. However,
 you may continue to use the + operator for string concatenation.
 */
 
-// export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+    const mul1 = multiply(multArr[0], multArr[1]);
+    const mult2 = multiply(mul1[0], multArr[2])[0];
 
-// }
+    return [mult2, `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${mult2}.`];
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
